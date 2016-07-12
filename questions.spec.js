@@ -48,20 +48,27 @@ describe('Les chaines de caractères : ', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
-    /*********** BONUS 
+    
     it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
     });
+
+  
     it('Mettre en minuscule la chaine', function () {
         var result = minusculeString('Celui ci aussi!');
         expect(result).toEqual('celui ci aussi!');
     });
+
+
+
     it('Comptez le nombre de caractères différents dans la chaine', function(){
         var result = countDistinctCar('La maison de carole a vue sur le parc du Thabor');
         expect(result).toEqual(19);
 
     });
+
+    /*********** BONUS
     ******************/
 })
 describe('Les nombres et opérations mathématiques : ', function () {
@@ -77,18 +84,21 @@ describe('Les nombres et opérations mathématiques : ', function () {
         var result = valeurAbsolueArray([-5,-50,-25,-568]);
         expect(result).toEqual([5,50,25,568]);
     });
-    /********* BONUS 
+    
     it('Calculer la surface d\'un cercle en fonction de son rayon. L\'arondir à l\'entier le plus proche', function () {
         var result = sufaceCercle(5);
         expect(result).toEqual(79);
     });
+
+    
     it('Calculer l\'hypthènuse d\'un triangle rectangle', function () {
         var result = hypothenuse(5, 8);
         expect(result).toEqual(9.433981132056603);
     });
+   
     it('Calculer l\'IMC (Poids / (taille x taille).Ne garder que deux chiffres après la virgule.', function () {
         var result = calculIMC(65, 1.75);
         expect(result).toEqual(21.22);
     });
-*****************/
+
 })

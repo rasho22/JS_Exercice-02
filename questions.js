@@ -68,8 +68,6 @@ function NombreEspaceString (n_espace){
 	return result;
 }
 
-
-
 function calculPuissance (x, y){
 	var result=Math.pow (x, y);
 	return result;
@@ -82,4 +80,38 @@ function valeurAbsolue (z){
 
 function valeurAbsolueArray (tab){
 	return result= tab.map(valeurAbsolue);
+};
+
+ function InverseString (inverse){
+ 	var result= inverse.split("").reverse().join("");
+ 	return result; 
+ };
+
+function minusculeString (minuscule){
+	var result=minuscule.toLowerCase();
+	return result;
+
+};
+
+function countDistinctCar (compter){
+	var result = compter.split("").filter(function(compter, i, x){
+	return x.indexOf(compter)===i}).length;
+	return result;
+};
+
+
+
+function sufaceCercle (suface){
+	var result=Math.round(Math.PI *suface * suface);
+	return result;
+};
+
+function hypothenuse (a, b){
+	var result=Math.hypot(a,b);
+	return result;
+}; 
+
+function calculIMC (c, d){
+	var result=Math.round((c/(d*d))*100)/100;
+	return result;
 }
